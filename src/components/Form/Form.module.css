@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.formG {
+  width: 47%;
+}
+
+.formG input {
+  margin-bottom: 12px;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin-bottom: 12px;
+}

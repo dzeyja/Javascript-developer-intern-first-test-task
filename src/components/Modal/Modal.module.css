@@ -1,0 +1,47 @@
+.modal {
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modalContent {
+  width: 700px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.modalContent form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.formG {
+  width: 47%;
+}
+
+.formG input {
+  margin-bottom: 12px;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin-bottom: 12px;
+}

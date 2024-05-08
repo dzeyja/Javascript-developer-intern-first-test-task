@@ -1,0 +1,67 @@
+.headerActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 0;
+}
+
+.left {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  gap: 15px;
+}
+
+.select {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 7px 10px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.selectFollower {
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #666;
+  padding: 7px 10px;
+}
+
+.additionaly {
+  padding: 7px 10px;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.lostBtn {
+  padding: 7px 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(205, 42, 42);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+.days {
+  display: flex;
+}
+
+.days li {
+  list-style: none;
+}
+
+.days li button {
+  padding: 3px 19px;
+  border: none;
+}

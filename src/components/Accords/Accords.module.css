@@ -1,0 +1,9 @@
+.accordion {
+  border: none;
+  background-color: #fff;
+}
+
+.jobsInfo li {
+  margin-bottom: 10px;
+  list-style: none;
+}

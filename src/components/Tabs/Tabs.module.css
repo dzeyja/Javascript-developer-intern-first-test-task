@@ -1,0 +1,10 @@
+.tabs {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.tabText {
+  padding: 15px;
+  color: #999;
+}

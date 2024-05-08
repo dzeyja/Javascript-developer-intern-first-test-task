@@ -1,0 +1,12 @@
+.wrapper {
+  margin-top: 201px;
+}
+
+.main {
+  background-color: #dcdcdc;
+}
+
+.sidebar {
+  height: 100vh;
+  border-right: 2px solid #666;
+}
