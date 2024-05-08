@@ -4,5 +4,6 @@
 }
 
 .jobsInfo li span {
-  color: #555;
+  color: #777;
+  text-align: center;
 }

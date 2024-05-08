@@ -3,6 +3,7 @@ import MySelect from '../MySelect/MySelect'
 import img from '../../images/icons8-данные-о-здоровье-50.png'
 
 import styles from './HeaderActions.module.css'
+import { useAppSelector } from '../../hooks/redux'
 
 const days: number[] = []
 
@@ -11,10 +12,14 @@ for (let i = 0; i < 16; i++) {
 }
 
 const HeaderActions: FC = () => {
+  const jobId = useAppSelector((state) => state.job.job.id)
+
   return (
     <>
       <div className={styles.headerActions}>
-        <div className={styles.left}>Test Deals</div>
+        <div className={styles.left}>
+          {jobId ? <h1># {jobId}</h1> : <h1>Test Deal</h1>}
+        </div>
         <div className={styles.right}>
           <MySelect
             className={styles.selectFollower}

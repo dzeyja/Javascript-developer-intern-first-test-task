@@ -1,0 +1,21 @@
+.focusContent {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.deal {
+  margin-left: 20px;
+}
+
+.deal div {
+  font-weight: 700;
+}
+
+.deal p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+}

@@ -4,6 +4,7 @@ import Accords from '../Accords/Accords'
 
 import styles from './Main.module.css'
 import TabC from '../Tabs/Tabs'
+import MainContent from '../MainContent/MainContent'
 
 const Main: FC = () => {
   return (
@@ -14,6 +15,7 @@ const Main: FC = () => {
         </Col>
         <Col md={9} className={styles.main}>
           <TabC />
+          <MainContent />
         </Col>
       </Row>
     </Container>

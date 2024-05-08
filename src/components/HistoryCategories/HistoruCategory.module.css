@@ -1,0 +1,19 @@
+.categories {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.active {
+  background-color: lightskyblue;
+  color: blue;
+}
+
+.categories div {
+  padding: 3px 8px;
+  font-weight: 700;
+  list-style: none;
+  text-align: left;
+  border-radius: 4px;
+}

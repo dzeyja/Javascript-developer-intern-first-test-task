@@ -11,7 +11,7 @@ const JobList: FC<JobListProps> = ({ job }) => {
   return (
     <ul className={styles.jobsInfo}>
       <li>
-        <span>Address:</span> {job.firstName}
+        <span>Address:</span> {job.address}
       </li>
       <li>
         <span>Job type:</span>
@@ -33,10 +33,10 @@ const JobList: FC<JobListProps> = ({ job }) => {
         <span>Job comment:</span>
       </li>
       <li>
-        <span>Job ID:</span>
+        <span>Job ID:</span> #{job.id}
       </li>
       <li>
-        <span>Job Linkz:</span>
+        <span>Job Link:</span>
       </li>
     </ul>
   )

@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 2px solid #c0c0c0;
 }
 
 .nav {

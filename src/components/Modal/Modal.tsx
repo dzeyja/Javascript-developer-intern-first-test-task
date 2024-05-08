@@ -1,10 +1,11 @@
 import React, { ChangeEvent, FC, FormEvent, useState } from 'react'
-
-import styles from './Modal.module.css'
-import { useAppDispatch } from '../../hooks/redux'
+import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { setAddJob } from '../../store/slices/jobSlice/jobSlice'
 import Forma from '../Form/Form'
 import { IJob } from '../../types/types'
+import { generateId } from '../../utils/generateId'
+
+import styles from './Modal.module.css'
 
 interface ModalkaProps {
   active: boolean
@@ -13,6 +14,7 @@ interface ModalkaProps {
 
 const Modalka: FC<ModalkaProps> = ({ active, setActive }) => {
   const [jobInfo, setJobInfo] = useState<IJob>({
+    id: generateId(),
     firstName: '',
     lastName: '',
     phone: '',
@@ -26,6 +28,7 @@ const Modalka: FC<ModalkaProps> = ({ active, setActive }) => {
     date: '',
     startTime: '',
     endTime: '',
+    link: '',
   })
 
   const dispatch = useAppDispatch()
@@ -48,6 +51,8 @@ const Modalka: FC<ModalkaProps> = ({ active, setActive }) => {
       jobInfo.zipCode
     ) {
       dispatch(setAddJob(jobInfo))
+    } else {
+      alert('Заполните все поля')
     }
   }
 

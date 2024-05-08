@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { IJob } from '../../../types/types'
 
 interface IState {
@@ -7,6 +7,7 @@ interface IState {
 
 const initialState: IState = {
   job: {
+    id: 0,
     firstName: '',
     lastName: '',
     phone: '',
@@ -20,6 +21,7 @@ const initialState: IState = {
     date: '',
     startTime: '',
     endTime: '',
+    link: 'https://api.testlink.com',
   },
 }
 
@@ -27,7 +29,7 @@ const jobSlice = createSlice({
   name: 'job',
   initialState,
   reducers: {
-    setAddJob: (state, action) => {
+    setAddJob: (state, action: PayloadAction<IJob>) => {
       return { ...state, job: action.payload }
     },
   },

@@ -1,4 +1,5 @@
 export interface IJob {
+  id: number
   firstName: string
   lastName: string
   phone: string
@@ -12,4 +13,5 @@ export interface IJob {
   date: string
   startTime: string
   endTime: string
+  link: string
 }

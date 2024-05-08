@@ -1,0 +1,42 @@
+.dealInfo {
+  padding: 20px;
+  background-color: #dfc05b96;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dealActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dateTime {
+  font-weight: 600;
+  color: #999;
+}
+
+.addComment {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.deal {
+  margin-left: 20px;
+}
+
+.deal div {
+  font-weight: 700;
+}
+
+.deal p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+}

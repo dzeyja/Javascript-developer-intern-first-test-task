@@ -16,14 +16,13 @@ const Accords: FC = () => {
     <>
       <Accordion alwaysOpen defaultActiveKey="2" className={styles.acc}>
         <Accordion.Item className={styles.accordion} eventKey="0">
-          <Accordion.Header>
-            Test <GrPowerReset />
-          </Accordion.Header>
+          <Accordion.Header>Test</Accordion.Header>
           <Accordion.Body>
             <Button variant="success">Test</Button>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item className={styles.accordion} eventKey="1">
+
+        <Accordion.Item className={styles.accordion} eventKey="2">
           <Accordion.Header>Workiz</Accordion.Header>
           <Accordion.Body>
             <Button variant="success" onClick={() => setModalActive(true)}>
@@ -31,6 +30,7 @@ const Accords: FC = () => {
             </Button>
           </Accordion.Body>
         </Accordion.Item>
+
         <Accordion.Item className={styles.accordion} eventKey="2">
           <Accordion.Header>Details</Accordion.Header>
           <Accordion.Body>
